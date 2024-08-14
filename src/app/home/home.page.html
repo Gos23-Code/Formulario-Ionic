@@ -1,0 +1,78 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Formulario
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Formulario</ion-title>
+    </ion-toolbar>
+  </ion-header>
+ <!-- <ion-grid>
+<form>
+  <ion-grid>
+    <ion-col>
+<p><ion-input class="b-bottom" label="Title" placeholder="Write your Title here"></ion-input></p>
+    </ion-col>
+  </ion-grid>
+</form>
+ </ion-grid> -->
+
+ <ion-content>
+  <div class="form-container">
+    <!-- Imagen principal -->
+    <div class="main-image">
+      <img src="https://img.freepik.com/fotos-premium/controlador-juego-brillo-azul-neon_561641-755.jpg" alt="Gamer Neon Image">
+    </div>
+</div>
+    
+ <ion-list>
+<ion-item>
+  <ion-input class="b-bottom" label="Title:" placeholder="Add your Title here" [counter]="true" minlength="3" 
+  errorText="Does not meet minimum requirements"
+  ngModel
+  [(ngModel)]="Title" (ngModelChange)="validarRequisitos()"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-input class="b-bottom" label="Description:" placeholder="Add your Description here" [counter]="true" minlength="10" 
+  errorText="Does not meet minimum requirements"
+  ngModel
+  [(ngModel)]="Description" (ngModelChange)="validarRequisitos()"></ion-input>
+</ion-item>
+
+<form>
+  <ion-grid>
+<ion-row>
+<ion-col>
+  <ion-button type="submit "(click)="addTask()" expand="full" class="gamer-button" [disabled]="!ReCu">Add Information</ion-button>
+<!-- <ion-button type="submit" color="success" [disabled]="!ReCu" (click)="addTask()">Add</ion-button> -->
+</ion-col>
+</ion-row>
+</ion-grid>
+</form>
+ </ion-list>
+
+  <ion-list *ngIf="Result.length > 0; else noResult">
+    <ion-item *ngFor="let Result1 of Result">
+      <ion-avatar slot="start">
+        <img src="https://careforth.com/wp-content/uploads/sites/2/2022/12/iStock-872608184-scaled-1.jpg?w=1024" alt="Gamer Icon">
+      </ion-avatar>
+      <ion-label>
+        <h2>{{ Result1.title }}</h2>
+        <p>{{ Result1.description }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ng-template #noResult>
+    <p>No hay nah, agrega algo :p</p>
+  </ng-template>
+ </ion-content> 
+ <!-- [disabled]="true"
+ helperText="Enter a Title" -->
+ <!-- helperText="Enter a Description" -->

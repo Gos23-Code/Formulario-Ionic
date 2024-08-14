@@ -1,0 +1,251 @@
+// #container {
+//   text-align: center;
+
+//   position: absolute;
+//   left: 0;
+//   right: 0;
+//   top: 50%;
+//   transform: translateY(-50%);
+// }
+
+// #container strong {
+//   font-size: 20px;
+//   line-height: 26px;
+// }
+
+// #container p {
+//   font-size: 16px;
+//   line-height: 22px;
+
+//   color: #8c8c8c;
+
+//   margin: 0;
+// }
+
+// #container a {
+//   text-decoration: none;
+// }
+
+// ion-button {
+//   --background: #93e9be;
+//   --background-hover: #9ce0be;
+//   --background-activated: #88f4be;
+//   --background-focused: #88f4be;
+
+//   --color: black;
+
+//   --border-radius: 0;
+//   --border-color: #000;
+//   --border-style: solid;
+//   --border-width: 1px;
+
+//   --box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.25);
+
+//   --ripple-color: deeppink;
+
+//   --padding-top: 10px;
+//   --padding-bottom: 10px;
+// }
+ion-content {
+  --background: #0f0f0f;
+  color: #fff;
+  font-family: 'Press Start 2P', cursive; /* Fuente digital estilo gamer */
+}
+
+.form-container {
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.5); /* Efecto de iluminación */
+}
+
+ion-item {
+  background-color: #2e2e2e;
+  border-radius: 5px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.3);
+}
+
+ion-label {
+  color: #00ffff;
+  font-size: 1.2em;
+}
+
+.gamer-input {
+  background-color: #2e2e2e;
+  color: #00ffff;
+  border: 2px solid #00ffff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.1em;
+  margin-top: 15px;
+}
+
+// .gamer-button {
+//   background-color: #00ffff;
+//   color: #0f0f0f;
+//   font-size: 1.2em;
+//   margin-top: 15px;
+//   border-radius: 5px;
+//   box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.7);
+//   transition: background-color 0.3s, transform 0.3s;
+// }
+
+.gamer-button:hover {
+  background-color: #00ccff;
+  transform: scale(1.05);
+}
+
+.gamer-button:active {
+  background-color: #0099cc;
+  transform: scale(1.02);
+}
+
+
+ion-content {
+  --background: #0d0d0d;
+  color: #fff;
+  font-family: 'VT323', monospace; /* Fuente estilo gamer */
+}
+
+.form-container {
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5);
+}
+
+.gamer-input {
+  background-color: #2e2e2e;
+  color: #00ffff;
+  border: 2px solid #00ffff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+
+.gamer-button:hover {
+  background-color: #00ccff;
+  transform: scale(1.05);
+}
+
+.gamer-list {
+  margin-top: 20px;
+}
+
+ion-item {
+  background-color: #2e2e2e;
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.3);
+  transition: transform 0.3s;
+}
+
+ion-item:hover {
+  transform: translateX(10px);
+}
+
+.gamer-icon {
+  color: #ff6600; /* Color neón */
+  font-size: 1.5em;
+}
+
+.remove-icon {
+  color: #ff0000;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.remove-icon:hover {
+  color: #ff3333;
+}
+
+
+ion-content {
+  --background: #0d0d0d;
+  color: #fff;
+  font-family: 'VT323', monospace;
+}
+
+.form-container {
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5);
+  text-align: center;
+}
+
+.main-image img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.7);
+}
+
+.gamer-input {
+  background-color: #2e2e2e;
+  color:#9b9b9b; 
+  //#00ffff;
+  border: 2px solid #00ffff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.gamer-button {
+  background-color: #1a1a1a;
+  color: #00ffff;
+  font-size: 1.2em;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.7);
+  text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 15px #00ffff, 
+               0 0 20px #00ccff, 0 0 30px #00ccff, 0 0 40px #00ccff;
+  transition: background-color 0.3s, transform 0.3s;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.gamer-button:hover {
+  background-color: #00ccff;
+  transform: scale(1.05);
+}
+
+.gamer-list {
+  margin-top: 20px;
+}
+
+ion-item {
+  background-color: #2e2e2e;
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.3);
+  transition: transform 0.3s;
+}
+
+ion-item:hover {
+  transform: translateX(10px);
+}
+
+ion-avatar img {
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.7);
+}
+
+.remove-icon {
+  color: #ff0000;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.remove-icon:hover {
+  color: #ff3333;
+}
